@@ -1,0 +1,119 @@
+/* Smooth fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animateFadeIn {
+  animation: fadeIn 1s ease-out;
+}
+
+/* Custom Pagination Bullets */
+.customBullet {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.swiperPaginationBulletActive {
+  width: 32px;
+  background-color: #f97316;
+  border-radius: 10px;
+}
+
+/* Pagination positioning */
+.swiperPagination {
+  bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Custom Navigation Arrows */
+.customNavButton {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.customNavButton:hover {
+  background-color: rgba(249, 115, 22, 0.8);
+  border-color: rgba(249, 115, 22, 1);
+  transform: translateY(-50%) scale(1.1);
+}
+
+:global(.swiper-button-prev)::after,
+:global(.swiper-button-next)::after {
+  content: "";
+  font-size: 24px;
+  color: white;
+}
+
+:global(.swiper-button-prev) {
+  left: 24px;
+}
+
+:global(.swiper-button-next) {
+  right: 24px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .customNavButton {
+    width: 40px;
+    height: 40px;
+  }
+
+  .customBullet {
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+  }
+
+  .swiperPaginationBulletActive {
+    width: 28px;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .animateFadeIn,
+  .customNavButton,
+  .customBullet {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Image container fix for proper fitting */
+.slideImage {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
