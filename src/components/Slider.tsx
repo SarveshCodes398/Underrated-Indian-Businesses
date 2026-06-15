@@ -75,6 +75,7 @@ export default function HeroSlider() {
         }}
         onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
         className="h-full w-full"
+        
       >
         {slides.map((slide) => (
           <SwiperSlide key={slide.slug}>
