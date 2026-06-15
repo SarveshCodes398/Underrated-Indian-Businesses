@@ -13,11 +13,10 @@ const page = () => {
     <>
     <Header/>
     <Branding/>
-     ({/* ... 
-    <div className='mt-3 w-[90%] h-[90%]'>
+     
     <Slider/>
-    </div>
-    */})
+    
+    
     <Footer/>
     </>
   )

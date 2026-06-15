@@ -1,133 +1,107 @@
 "use client";
 
-import React, { useState } from "react";
+import { useRouter } from "next/navigation";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
-  Pagination,
-  Mousewheel,
-  EffectFade,
-  Autoplay,
   Navigation,
+  Pagination,
+  Autoplay,
+  EffectCoverflow,
 } from "swiper/modules";
-import Link from "next/link";
-import styles from "./Slider.module.css";
+
 import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/effect-fade";
 import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/effect-coverflow";
 
 const slides = [
   {
-    title: "Okra (Bhindi) Business",
-    desc: "Learn sourcing, local selling, national expansion, and export opportunities.",
+    title: "Okra",
     image: "/okra.png",
-    slug: "okra",
-    route: "/guides/okra",
+    route: "/Okra",
   },
   {
-    title: "Refined Oil Business",
-    desc: "Understand oilseed sourcing, processing, bottling, and profitable distribution.",
+    title: "Refined Oil",
     image: "/refi.png",
-    slug: "refined-oil",
-    route: "/guides/refined-oil",
+    route: "/Refi",
   },
   {
-    title: "Foxnut (Makhana) Business",
-    desc: "Explore branding, packaging, and Amazon selling strategies.",
+    title: "Fox Nuts (Makhana)",
     image: "/fox.png",
-    slug: "makhana",
-    route: "/guides/makhana",
+    route: "/FoxNuts",
   },
   {
-    title: "Gond Katira Business",
-    desc: "Build a wellness brand around this underrated herbal product.",
+    title: "Tragacanth Gum (Gond Katira)",
     image: "/gum.png",
-    slug: "gond-katira",
-    route: "/guides/gond-katira",
+    route: "/Gum",
   },
 ];
 
-export default function HeroSlider() {
-  const [activeIndex, setActiveIndex] = useState(0);
+export default function Slider() {
+  const router = useRouter();
 
   return (
-    <div className="relative w-full h-screen overflow-hidden bg-white">
-      <Swiper
-        modules={[Pagination, Mousewheel, EffectFade, Autoplay, Navigation]}
-        effect="fade"
-        speed={1200}
-        loop={true}
-        mousewheel={true}
-        autoplay={{
-          delay: 6000,
-          disableOnInteraction: false,
-        }}
-        pagination={{
-          clickable: true,
-          bulletActiveClass: styles.swiperPaginationBulletActive,
-          renderBullet: (index, className) => {
-            return `<span class="${styles.customBullet} ${className}"></span>`;
-          },
-        }}
-        navigation={{
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        }}
-        onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
-        className="h-full w-full"
-        
-      >
-        {slides.map((slide) => (
-          <SwiperSlide key={slide.slug}>
-            <div className="relative h-screen w-full">
+    <section className="w-full py-16">
+      <div className="mx-auto max-w-7xl px-4">
+        <Swiper
+          modules={[
+            Navigation,
+            Pagination,
+            Autoplay,
+            EffectCoverflow,
+          ]}
+          effect="coverflow"
+          centeredSlides
+          loop
+          grabCursor
+          slidesPerView={1.2}
+          navigation
+          pagination={{
+            clickable: true,
+          }}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
+          coverflowEffect={{
+            rotate: 15,
+            stretch: 0,
+            depth: 150,
+            modifier: 1,
+            slideShadows: true,
+            scale: 0.9,
+          }}
+          breakpoints={{
+            640: {
+              slidesPerView: 1.3,
+            },
+            768: {
+              slidesPerView: 1.5,
+            },
+            1024: {
+              slidesPerView: 1.8,
+            },
+          }}
+          className="pb-14"
+        >
+          {slides.map((slide) => (
+            <SwiperSlide key={slide.route}>
               <div
-                className={styles.slideImage}
-                style={{
-                  backgroundImage: `url(${slide.image})`,
-                }}
-              ></div>
-              {/* Gradient Overlay - light and elegant */}
-              <div className="absolute inset-0 bg-linear-to-r from-black/40 to-black/20"></div>
-
-              {/* Content Container */}
-              <div className="relative h-full flex flex-col items-center justify-center px-6 md:px-12">
-                <div className={`max-w-2xl text-center space-y-6 ${styles.animateFadeIn}`}>
-                  {/* Title */}
-                  <div className="space-y-3">
-                    <div className="inline-block">
-                      <span className="text-sm md:text-base font-semibold text-orange-400 tracking-widest uppercase">
-                        Business Guide
-                      </span>
-                    </div>
-                    <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight drop-shadow-lg">
-                      {slide.title}
-                    </h1>
-                  </div>
-
-                  {/* Description */}
-                  <p className="text-lg md:text-xl text-gray-100 leading-relaxed drop-shadow-md max-w-xl mx-auto">
-                    {slide.desc}
-                  </p>
-
-                  {/* CTA Button */}
-                  <div className="pt-4">
-                    <Link href={slide.route}>
-                      <button className="inline-block px-8 md:px-10 py-3 md:py-4 bg-linear-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-xl hover:shadow-2xl hover:shadow-orange-500/50 transition-all duration-300 ease-out transform hover:scale-105 active:scale-95">
-                        Explore Full Guide
-                        <span className="ml-2">→</span>
-                      </button>
-                    </Link>
-                  </div>
-                </div>
+                onClick={() => router.push(slide.route)}
+                className="overflow-hidden rounded-3xl shadow-2xl cursor-pointer transition-all duration-300 hover:scale-105"
+              >
+                <img
+                  src={slide.image}
+                  alt={slide.title}
+                  className="w-full h-auto object-contain rounded-3xl select-none pointer-events-none"
+                  draggable={false}
+                />
               </div>
-            </div>
-          </SwiperSlide>
-        ))}
-
-        {/* Navigation Arrows */}
-        <div className={`swiper-button-prev ${styles.customNavButton}`}></div>
-        <div className={`swiper-button-next ${styles.customNavButton}`}></div>
-      </Swiper>
-    </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+    </section>
   );
 }

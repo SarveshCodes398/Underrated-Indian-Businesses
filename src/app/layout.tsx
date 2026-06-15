@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
+import ClerkLayout from './clerk-provider';
 import "./globals.css";
 
 const poppins = Poppins({
@@ -7,8 +8,6 @@ const poppins = Poppins({
   weight: ["400", "500", "600", "700"], // Specify required weights
   display: "swap", // Ensures text remains visible during loading
 });
-
-
 
 export const metadata: Metadata = {
   title: "UIB",
@@ -25,7 +24,11 @@ export default function RootLayout({
       lang="en"
       className={poppins.className}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <ClerkLayout>
+          {children}
+        </ClerkLayout>
+      </body>
     </html>
   );
 }
