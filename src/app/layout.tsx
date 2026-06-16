@@ -25,7 +25,7 @@ export default function RootLayout({
       lang="en"
       className={poppins.className}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col overflow-x-hidden w-full">{children}</body>
     </html>
   );
 }

@@ -6,32 +6,32 @@ const page = () => {
   return (
     <>
     <Header/>
-    <div className="max-w-6xl mx-auto px-6 py-12">
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
 
   {/* Hero Section */}
-  <section className="text-center mb-16">
-    <h1 className="text-6xl font-extrabold mb-4">
+  <section className="text-center mb-10 sm:mb-16">
+    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4">
       Okra (Bhindi) Business Guide
     </h1>
 
-    <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+    <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
       Learn how to start, scale, and legally grow an Okra business from local
       selling to national distribution and international exports.
     </p>
   </section>
 
   {/* Step 1 */}
-  <section className="mb-16">
-    <h2 className="text-4xl font-bold mb-6">
+  <section className="mb-10 sm:mb-16">
+    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6">
       🌾 Step 1: Sourcing Your Bhindi
     </h2>
 
-    <div className="bg-white rounded-2xl shadow-lg p-8">
-      <h3 className="text-2xl font-semibold mb-4">
+    <div className="bg-white rounded-2xl shadow-lg p-4 sm:p-6 md:p-8">
+      <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-4">
         Option A: The Growing Route
       </h3>
 
-      <ul className="space-y-4 text-lg">
+      <ul className="space-y-4 text-base sm:text-lg">
         <li>
           <strong>How:</strong> Plant premium varieties like Arka Anamika
           or Pusa A4.
@@ -56,18 +56,18 @@ const page = () => {
   </section>
 
   {/* Step 2 */}
-  <section className="mb-16">
-    <h2 className="text-4xl font-bold mb-6">
+  <section className="mb-10 sm:mb-16">
+    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6">
       🏢 Step 2: Legal & Scaling Roadmap
     </h2>
 
-    <p className="text-lg mb-8">
+    <p className="text-base sm:text-lg mb-6 sm:mb-8">
       As your business grows, the registrations and licenses required
       also increase. Follow the roadmap below.
     </p>
 
     {/* Level 1 */}
-    <div className="border rounded-2xl p-8 mb-8">
+    <div className="border rounded-2xl p-4 sm:p-6 md:p-8 mb-8">
       <h3 className="text-2xl font-bold mb-4">
         Level 1: Selling Locally
       </h3>
@@ -82,7 +82,7 @@ const page = () => {
     </div>
 
     {/* Level 2 */}
-    <div className="border rounded-2xl p-8 mb-8">
+    <div className="border rounded-2xl p-4 sm:p-6 md:p-8 mb-8">
       <h3 className="text-2xl font-bold mb-4">
         Level 2: Selling Nationally
       </h3>
@@ -118,7 +118,7 @@ const page = () => {
     </div>
 
     {/* Level 3 */}
-    <div className="border rounded-2xl p-8">
+    <div className="border rounded-2xl p-4 sm:p-6 md:p-8">
       <h3 className="text-2xl font-bold mb-4">
         Level 3: International Export
       </h3>
@@ -159,8 +159,8 @@ const page = () => {
       </div>
     </div>
   </section>
-  <section className="mb-16">
-  <h2 className="text-4xl font-bold mb-8">
+  <section className="mb-10 sm:mb-16">
+  <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8">
     💰 Recommended Tools & Services
   </h2>
 
@@ -172,8 +172,8 @@ const page = () => {
   <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
 
     {/* Amazon */}
-    <div className="border rounded-2xl p-6 hover:shadow-lg transition">
-      <h3 className="text-2xl font-semibold mb-3">Amazon</h3>
+    <div className="border rounded-2xl p-4 sm:p-6 hover:shadow-lg transition">
+      <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-3">Amazon</h3>
 
       <p className="text-gray-600 mb-4">
         Buy packaging materials, weighing scales, storage crates,
@@ -189,8 +189,8 @@ const page = () => {
       </a>
     </div>
 
-    <div className="border rounded-2xl p-6">
-      <h3 className="text-xl font-semibold mb-3">
+    <div className="border rounded-2xl p-4 sm:p-6">
+      <h3 className="text-lg sm:text-xl font-semibold mb-3">
         Heat Sealer
       </h3>
 
@@ -207,8 +207,8 @@ const page = () => {
       </a>
     </div>
 
-    <div className="border rounded-2xl p-6">
-      <h3 className="text-xl font-semibold mb-3">
+    <div className="border rounded-2xl p-4 sm:p-6">
+      <h3 className="text-lg sm:text-xl font-semibold mb-3">
         Export Registration Help
       </h3>
 

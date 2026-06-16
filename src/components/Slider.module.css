@@ -94,6 +94,21 @@
   .swiperPaginationBulletActive {
     width: 28px;
   }
+
+  :global(.swiper-button-prev) {
+    left: 8px;
+  }
+
+  :global(.swiper-button-next) {
+    right: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  :global(.swiper-button-prev),
+  :global(.swiper-button-next) {
+    display: none;
+  }
 }
 
 /* Reduced motion support */

@@ -7,14 +7,14 @@ const Page = () => {
     <>
       <Header />
 
-      <div className="min-h-screen max-w-5xl mx-auto px-6 py-8 text-xl font-medium">
-        <h1 className="text-5xl text-center font-bold mb-10">
+      <div className="min-h-screen max-w-5xl mx-auto px-4 sm:px-6 py-6 sm:py-8 text-base sm:text-lg md:text-xl font-medium">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl text-center font-bold mb-6 sm:mb-10">
           Cookie Policy
         </h1>
 
         {/* What Are Cookies */}
         <section className="mb-10">
-          <h2 className="text-3xl font-semibold mb-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4">
             What Are Cookies?
           </h2>
 
@@ -27,7 +27,7 @@ const Page = () => {
 
         {/* How We Use Cookies */}
         <section className="mb-10">
-          <h2 className="text-3xl font-semibold mb-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4">
             How UIB Uses Cookies
           </h2>
 
@@ -46,7 +46,7 @@ const Page = () => {
 
         {/* Third Party Services */}
         <section className="mb-10">
-          <h2 className="text-3xl font-semibold mb-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4">
             Third-Party Services
           </h2>
 
@@ -59,7 +59,7 @@ const Page = () => {
 
         {/* Managing Cookies */}
         <section className="mb-10">
-          <h2 className="text-3xl font-semibold mb-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4">
             Managing Cookies
           </h2>
 
@@ -82,7 +82,7 @@ const Page = () => {
 
         {/* Updates */}
         <section className="mb-10">
-          <h2 className="text-3xl font-semibold mb-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4">
             Updates to This Policy
           </h2>
 
@@ -95,7 +95,7 @@ const Page = () => {
 
         {/* Contact */}
         <section>
-          <h2 className="text-3xl font-semibold mb-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4">
             Contact Us
           </h2>
 

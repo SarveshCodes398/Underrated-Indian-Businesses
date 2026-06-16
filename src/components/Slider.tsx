@@ -42,8 +42,8 @@ export default function Slider() {
   const router = useRouter();
 
   return (
-    <section className="w-full py-16">
-      <div className="mx-auto max-w-7xl px-4">
+    <section className="w-full py-8 sm:py-12 md:py-16">
+      <div className="mx-auto max-w-7xl px-2 sm:px-4">
         <Swiper
           modules={[
             Navigation,
@@ -55,7 +55,7 @@ export default function Slider() {
           centeredSlides
           loop
           grabCursor
-          slidesPerView={1.2}
+          slidesPerView={1}
           navigation
           pagination={{
             clickable: true,
@@ -73,6 +73,9 @@ export default function Slider() {
             scale: 0.9,
           }}
           breakpoints={{
+            480: {
+              slidesPerView: 1.1,
+            },
             640: {
               slidesPerView: 1.3,
             },
@@ -83,18 +86,18 @@ export default function Slider() {
               slidesPerView: 1.8,
             },
           }}
-          className="pb-14"
+          className="pb-10 sm:pb-14"
         >
           {slides.map((slide) => (
             <SwiperSlide key={slide.route}>
               <div
                 onClick={() => router.push(slide.route)}
-                className="overflow-hidden rounded-3xl shadow-2xl cursor-pointer transition-all duration-300 hover:scale-105"
+                className="overflow-hidden rounded-2xl sm:rounded-3xl shadow-2xl cursor-pointer transition-all duration-300 hover:scale-105"
               >
                 <img
                   src={slide.image}
                   alt={slide.title}
-                  className="w-full h-auto object-contain rounded-3xl select-none pointer-events-none"
+                  className="w-full h-auto object-contain rounded-2xl sm:rounded-3xl select-none pointer-events-none"
                   draggable={false}
                 />
               </div>

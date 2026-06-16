@@ -7,14 +7,14 @@ const Page = () => {
     <>
       <Header />
 
-      <div className="min-h-screen max-w-5xl mx-auto px-6 py-8 text-xl font-medium">
-        <h1 className="text-5xl text-center font-bold mb-10">
+      <div className="min-h-screen max-w-5xl mx-auto px-4 sm:px-6 py-6 sm:py-8 text-base sm:text-lg md:text-xl font-medium">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl text-center font-bold mb-6 sm:mb-10">
           Terms & Conditions
         </h1>
 
         {/* Introduction */}
         <section className="mb-10">
-          <h2 className="text-3xl font-semibold mb-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4">
             Welcome to UIB (Underrated Indian Businesses)
           </h2>
 
@@ -27,7 +27,7 @@ const Page = () => {
 
         {/* Educational Purpose */}
         <section className="mb-10">
-          <h2 className="text-3xl font-semibold mb-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4">
             1. Educational Purpose Only
           </h2>
 
@@ -48,7 +48,7 @@ const Page = () => {
 
         {/* No Guarantee */}
         <section className="mb-10">
-          <h2 className="text-3xl font-semibold mb-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4">
             2. No Guarantee of Profit or Success
           </h2>
 
@@ -83,7 +83,7 @@ const Page = () => {
 
         {/* Government Processes */}
         <section className="mb-10">
-          <h2 className="text-3xl font-semibold mb-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4">
             3. Government Processes May Take Time
           </h2>
 
@@ -113,7 +113,7 @@ const Page = () => {
 
         {/* Accuracy */}
         <section className="mb-10">
-          <h2 className="text-3xl font-semibold mb-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4">
             4. Information Accuracy
           </h2>
 
@@ -139,7 +139,7 @@ const Page = () => {
 
         {/* User Responsibility */}
         <section className="mb-10">
-          <h2 className="text-3xl font-semibold mb-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4">
             5. User Responsibility
           </h2>
 
@@ -157,7 +157,7 @@ const Page = () => {
 
         {/* Advice Disclaimer */}
         <section className="mb-10">
-          <h2 className="text-3xl font-semibold mb-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4">
             6. No Legal, Financial, or Investment Advice
           </h2>
 
@@ -181,7 +181,7 @@ const Page = () => {
 
         {/* Liability */}
         <section className="mb-10">
-          <h2 className="text-3xl font-semibold mb-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4">
             7. Limitation of Liability
           </h2>
 
@@ -212,7 +212,7 @@ const Page = () => {
 
         {/* Changes */}
         <section className="mb-10">
-          <h2 className="text-3xl font-semibold mb-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4">
             8. Changes to These Terms
           </h2>
 
@@ -229,7 +229,7 @@ const Page = () => {
 
         {/* Promise */}
         <section>
-          <h2 className="text-3xl font-semibold mb-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4">
             Our Promise
           </h2>
 

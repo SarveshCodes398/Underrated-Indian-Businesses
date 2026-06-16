@@ -7,14 +7,14 @@ const Page = () => {
     <>
       <Header />
 
-      <div className="min-h-screen max-w-5xl mx-auto px-6 py-8 text-xl font-medium">
-        <h1 className="text-5xl text-center font-bold mb-10">
+      <div className="min-h-screen max-w-5xl mx-auto px-4 sm:px-6 py-6 sm:py-8 text-base sm:text-lg md:text-xl font-medium">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl text-center font-bold mb-6 sm:mb-10">
           User Policy
         </h1>
 
         {/* Welcome */}
         <section className="mb-10">
-          <h2 className="text-3xl font-semibold mb-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4">
             Welcome to UIB
           </h2>
 
@@ -28,7 +28,7 @@ const Page = () => {
 
         {/* Respectful Use */}
         <section className="mb-10">
-          <h2 className="text-3xl font-semibold mb-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4">
             Respectful Use
           </h2>
 
@@ -58,7 +58,7 @@ const Page = () => {
 
         {/* User Responsibility */}
         <section className="mb-10">
-          <h2 className="text-3xl font-semibold mb-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4">
             User Responsibility
           </h2>
 
@@ -83,7 +83,7 @@ const Page = () => {
 
         {/* Intellectual Property */}
         <section className="mb-10">
-          <h2 className="text-3xl font-semibold mb-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4">
             Intellectual Property
           </h2>
 
@@ -94,7 +94,7 @@ const Page = () => {
           </p>
 
           <div className="mt-6">
-            <h3 className="text-2xl font-semibold mb-3">
+            <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-3">
               Users May:
             </h3>
 
@@ -106,7 +106,7 @@ const Page = () => {
           </div>
 
           <div className="mt-6">
-            <h3 className="text-2xl font-semibold mb-3">
+            <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-3">
               Users May Not:
             </h3>
 
@@ -121,7 +121,7 @@ const Page = () => {
 
         {/* Suspension */}
         <section className="mb-10">
-          <h2 className="text-3xl font-semibold mb-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4">
             Suspension of Access
           </h2>
 
@@ -134,7 +134,7 @@ const Page = () => {
 
         {/* Policy Changes */}
         <section className="mb-10">
-          <h2 className="text-3xl font-semibold mb-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4">
             Changes to This Policy
           </h2>
 
@@ -147,7 +147,7 @@ const Page = () => {
 
         {/* Final Note */}
         <section>
-          <h2 className="text-3xl font-semibold mb-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4">
             Our Goal
           </h2>
 

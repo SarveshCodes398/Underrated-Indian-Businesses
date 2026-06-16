@@ -7,23 +7,23 @@ const page = () => {
     <>
   <Header/>
 
-  <div className="max-w-6xl mx-auto px-6 py-12">
+  <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
 
     {/* Hero Section */}
-    <section className="text-center mb-16">
-      <h1 className="text-6xl font-extrabold mb-4">
+    <section className="text-center mb-10 sm:mb-16">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4">
         🌻 Refined Oil Business Guide
       </h1>
 
-      <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+      <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
         Learn how to start, scale, package, brand, and export refined oil
         businesses from local markets to international buyers.
       </p>
     </section>
 
     {/* Important Notice */}
-    <section className="mb-12">
-      <div className="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-xl">
+    <section className="mb-8 sm:mb-12">
+      <div className="bg-yellow-50 border-l-4 border-yellow-500 p-4 sm:p-6 rounded-xl">
         <h3 className="font-bold text-xl mb-2">
           ⚠ Important Notice
         </h3>
@@ -38,13 +38,13 @@ const page = () => {
 
    
     {/* Step 1 */}
-    <section className="mb-16">
-      <h2 className="text-4xl font-bold mb-6">
+    <section className="mb-10 sm:mb-16">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6">
         🌱 Step 1: Sourcing Oil Seeds
       </h2>
 
-      <div className="bg-white shadow-lg rounded-2xl p-8">
-        <ul className="space-y-4 text-lg">
+      <div className="bg-white shadow-lg rounded-2xl p-4 sm:p-6 md:p-8">
+        <ul className="space-y-4 text-base sm:text-lg">
           <li>
             <strong>What it is:</strong> Buying mustard, sunflower,
             sesame, soybean, or groundnut seeds.
@@ -69,13 +69,13 @@ const page = () => {
     </section>
 
     {/* Step 2 */}
-    <section className="mb-16">
-      <div className="border rounded-2xl p-8">
-        <h2 className="text-4xl font-bold mb-6">
+    <section className="mb-10 sm:mb-16">
+      <div className="border rounded-2xl p-4 sm:p-6 md:p-8">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6">
           🏪 Step 2: Local Business
         </h2>
 
-        <ul className="space-y-4 text-lg">
+        <ul className="space-y-4 text-base sm:text-lg">
           <li>✅ Sell directly to local households.</li>
           <li>✅ Supply grocery stores and kirana shops.</li>
           <li>✅ Supply local dhabas and restaurants.</li>
@@ -87,13 +87,13 @@ const page = () => {
     </section>
 
     {/* Step 3 */}
-    <section className="mb-16">
-      <div className="border rounded-2xl p-8">
-        <h2 className="text-4xl font-bold mb-6">
+    <section className="mb-10 sm:mb-16">
+      <div className="border rounded-2xl p-4 sm:p-6 md:p-8">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6">
           🇮🇳 Step 3: National Business
         </h2>
 
-        <ul className="space-y-4 text-lg">
+        <ul className="space-y-4 text-base sm:text-lg">
           <li>📦 Launch your own refined oil brand.</li>
           <li>📱 Sell through Amazon, Flipkart, Udaan, and supermarkets.</li>
           <li>📄 FSSAI State License required.</li>
@@ -106,13 +106,13 @@ const page = () => {
     </section>
 
     {/* Step 4 */}
-    <section className="mb-16">
-      <div className="border rounded-2xl p-8">
-        <h2 className="text-4xl font-bold mb-6">
+    <section className="mb-10 sm:mb-16">
+      <div className="border rounded-2xl p-4 sm:p-6 md:p-8">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6">
           🌎 Step 4: International Export
         </h2>
 
-        <ul className="space-y-4 text-lg">
+        <ul className="space-y-4 text-base sm:text-lg">
           <li>🌍 Export premium cold-pressed oils.</li>
           <li>🌍 Target NRI and international markets.</li>
           <li>🌍 Use leak-proof export packaging.</li>
@@ -129,8 +129,8 @@ const page = () => {
     </section>
 
     {/* Government Links */}
-    <section className="mb-16">
-      <h2 className="text-4xl font-bold mb-8">
+    <section className="mb-10 sm:mb-16">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8">
         🏛 Official Government Portals
       </h2>
 
@@ -140,7 +140,7 @@ const page = () => {
           href="https://foscos.fssai.gov.in"
           target="_blank"
           rel="noopener noreferrer"
-          className="border p-6 rounded-xl hover:shadow-lg"
+          className="border p-4 sm:p-6 rounded-xl hover:shadow-lg"
         >
           FSSAI Registration
         </a>
@@ -149,7 +149,7 @@ const page = () => {
           href="https://reg.gst.gov.in/registration/"
           target="_blank"
           rel="noopener noreferrer"
-          className="border p-6 rounded-xl hover:shadow-lg"
+          className="border p-4 sm:p-6 rounded-xl hover:shadow-lg"
         >
           GST Registration
         </a>
@@ -158,7 +158,7 @@ const page = () => {
           href="https://www.dgft.gov.in"
           target="_blank"
           rel="noopener noreferrer"
-          className="border p-6 rounded-xl hover:shadow-lg"
+          className="border p-4 sm:p-6 rounded-xl hover:shadow-lg"
         >
           IEC Registration
         </a>
@@ -167,7 +167,7 @@ const page = () => {
           href="https://iiopepc.org"
           target="_blank"
           rel="noopener noreferrer"
-          className="border p-6 rounded-xl hover:shadow-lg"
+          className="border p-4 sm:p-6 rounded-xl hover:shadow-lg"
         >
           IOPEPC Registration
         </a>
@@ -176,19 +176,19 @@ const page = () => {
     </section>
 
     {/* Affiliate Section */}
-    <section className="mb-16">
-      <h2 className="text-4xl font-bold mb-8">
+    <section className="mb-10 sm:mb-16">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8">
         💰 Recommended Tools & Equipment
       </h2>
 
-      <p className="text-lg text-gray-600 mb-8">
+      <p className="text-lg text-gray-600 mb-6 sm:mb-8">
         These tools can help streamline your oil business operations.
       </p>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
 
-        <div className="border rounded-2xl p-6 hover:shadow-lg transition">
-          <h3 className="text-xl font-semibold mb-3">
+        <div className="border rounded-2xl p-4 sm:p-6 hover:shadow-lg transition">
+          <h3 className="text-lg sm:text-xl font-semibold mb-3">
             Oil Expeller Machine
           </h3>
 
@@ -206,8 +206,8 @@ const page = () => {
           </a>
         </div>
 
-        <div className="border rounded-2xl p-6 hover:shadow-lg transition">
-          <h3 className="text-xl font-semibold mb-3">
+        <div className="border rounded-2xl p-4 sm:p-6 hover:shadow-lg transition">
+          <h3 className="text-lg sm:text-xl font-semibold mb-3">
             Digital Weighing Scale
           </h3>
 
@@ -225,8 +225,8 @@ const page = () => {
           </a>
         </div>
 
-        <div className="border rounded-2xl p-6 hover:shadow-lg transition">
-          <h3 className="text-xl font-semibold mb-3">
+        <div className="border rounded-2xl p-4 sm:p-6 hover:shadow-lg transition">
+          <h3 className="text-lg sm:text-xl font-semibold mb-3">
             Bottle Sealing Machine
           </h3>
 
@@ -244,8 +244,8 @@ const page = () => {
           </a>
         </div>
 
-        <div className="border rounded-2xl p-6 hover:shadow-lg transition">
-          <h3 className="text-xl font-semibold mb-3">
+        <div className="border rounded-2xl p-4 sm:p-6 hover:shadow-lg transition">
+          <h3 className="text-lg sm:text-xl font-semibold mb-3">
             Trademark & Legal Help
           </h3>
 

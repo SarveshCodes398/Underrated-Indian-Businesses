@@ -8,23 +8,23 @@ const page = () => {
 
   <Header />
 
-  <div className="max-w-6xl mx-auto px-6 py-12">
+  <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
 
 {/* Hero Section */}
-<section className="text-center mb-16">
-  <h1 className="text-6xl font-extrabold mb-4">
+<section className="text-center mb-10 sm:mb-16">
+  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4">
      Tragacanth Gum (Gond Katira) Business Guide
   </h1>
 
-  <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+  <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
     Learn how to source, package, brand, and export Gond Katira from local
     markets to national and international buyers.
   </p>
 </section>
 
 {/* Important Notice */}
-<section className="mb-12">
-  <div className="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-xl">
+<section className="mb-8 sm:mb-12">
+  <div className="bg-yellow-50 border-l-4 border-yellow-500 p-4 sm:p-6 rounded-xl">
     <h3 className="font-bold text-xl mb-2">
       ⚠ Important Notice
     </h3>
@@ -41,13 +41,13 @@ const page = () => {
 
 
 {/* Step 1 */}
-<section className="mb-16">
-  <h2 className="text-4xl font-bold mb-6">
+<section className="mb-10 sm:mb-16">
+  <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6">
     🟤 Step 1: Sourcing Gond Katira
   </h2>
 
-  <div className="bg-white shadow-lg rounded-2xl p-8">
-    <ul className="space-y-4 text-lg">
+  <div className="bg-white shadow-lg rounded-2xl p-4 sm:p-6 md:p-8">
+    <ul className="space-y-4 text-base sm:text-lg">
       <li>
         <strong>What it is:</strong> Buying raw crystalline Gond Katira
         before cleaning, grading, or packaging.
@@ -77,13 +77,13 @@ const page = () => {
 </section>
 
 {/* Step 2 */}
-<section className="mb-16">
-  <div className="border rounded-2xl p-8">
-    <h2 className="text-4xl font-bold mb-6">
+<section className="mb-10 sm:mb-16">
+  <div className="border rounded-2xl p-4 sm:p-6 md:p-8">
+    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6">
       🏪 Step 2: Local Business
     </h2>
 
-    <ul className="space-y-4 text-lg">
+    <ul className="space-y-4 text-base sm:text-lg">
       <li>✅ Sell directly to households.</li>
       <li>✅ Supply local grocery stores.</li>
       <li>✅ Target juice centers and sharbat stalls.</li>
@@ -101,13 +101,13 @@ const page = () => {
 </section>
 
 {/* Step 3 */}
-<section className="mb-16">
-  <div className="border rounded-2xl p-8">
-    <h2 className="text-4xl font-bold mb-6">
+<section className="mb-10 sm:mb-16">
+  <div className="border rounded-2xl p-4 sm:p-6 md:p-8">
+    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6">
       🇮🇳 Step 3: National Business
     </h2>
 
-    <ul className="space-y-4 text-lg">
+    <ul className="space-y-4 text-base sm:text-lg">
       <li>📦 Create your own Gond Katira brand.</li>
       <li>📦 Sell cleaned crystals or instant powder.</li>
       <li>📱 List products on Amazon, Flipkart, and wellness marketplaces.</li>
@@ -126,13 +126,13 @@ const page = () => {
 </section>
 
 {/* Step 4 */}
-<section className="mb-16">
-  <div className="border rounded-2xl p-8">
-    <h2 className="text-4xl font-bold mb-6">
+<section className="mb-10 sm:mb-16">
+  <div className="border rounded-2xl p-4 sm:p-6 md:p-8">
+    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6">
       🌍 Step 4: International Export
     </h2>
 
-    <ul className="space-y-4 text-lg">
+    <ul className="space-y-4 text-base sm:text-lg">
       <li>🌍 Export premium Grade-A white crystals.</li>
       <li>🌍 Market as a vegan food stabilizer and thickening agent.</li>
       <li>🌍 Target USA, UK, Canada, Australia, and Gulf countries.</li>
@@ -151,8 +151,8 @@ const page = () => {
 </section>
 
 {/* Government & Export Registrations */}
-<section className="mb-16">
-  <h2 className="text-4xl font-bold mb-8">
+<section className="mb-10 sm:mb-16">
+  <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8">
     🏛 Official Government Portals
   </h2>
 
@@ -162,7 +162,7 @@ const page = () => {
       href="https://foscos.fssai.gov.in"
       target="_blank"
       rel="noopener noreferrer"
-      className="border p-6 rounded-xl hover:shadow-lg"
+      className="border p-4 sm:p-6 rounded-xl hover:shadow-lg"
     >
       FSSAI Registration
     </a>
@@ -171,7 +171,7 @@ const page = () => {
       href="https://www.dgft.gov.in"
       target="_blank"
       rel="noopener noreferrer"
-      className="border p-6 rounded-xl hover:shadow-lg"
+      className="border p-4 sm:p-6 rounded-xl hover:shadow-lg"
     >
       IEC Registration
     </a>
@@ -180,7 +180,7 @@ const page = () => {
       href="https://www.shefexil.org"
       target="_blank"
       rel="noopener noreferrer"
-      className="border p-6 rounded-xl hover:shadow-lg"
+      className="border p-4 sm:p-6 rounded-xl hover:shadow-lg"
     >
       SHEFEXIL Registration
     </a>
@@ -189,20 +189,20 @@ const page = () => {
 </section>
 
 {/* Affiliate Section */}
-<section className="mb-16">
-  <h2 className="text-4xl font-bold mb-8">
+<section className="mb-10 sm:mb-16">
+  <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8">
     💰 Recommended Tools & Equipment
   </h2>
 
-  <p className="text-lg text-gray-600 mb-8">
+  <p className="text-lg text-gray-600 mb-6 sm:mb-8">
     These tools can help improve packaging quality, product consistency,
     and operational efficiency.
   </p>
 
   <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
 
-    <div className="border rounded-2xl p-6 hover:shadow-lg transition">
-      <h3 className="text-xl font-semibold mb-3">
+    <div className="border rounded-2xl p-4 sm:p-6 hover:shadow-lg transition">
+      <h3 className="text-lg sm:text-xl font-semibold mb-3">
         Precision Digital Scale
       </h3>
 
@@ -219,8 +219,8 @@ const page = () => {
       </a>
     </div>
 
-    <div className="border rounded-2xl p-6 hover:shadow-lg transition">
-      <h3 className="text-xl font-semibold mb-3">
+    <div className="border rounded-2xl p-4 sm:p-6 hover:shadow-lg transition">
+      <h3 className="text-lg sm:text-xl font-semibold mb-3">
         Heavy-Duty Heat Sealer
       </h3>
 
@@ -237,8 +237,8 @@ const page = () => {
       </a>
     </div>
 
-    <div className="border rounded-2xl p-6 hover:shadow-lg transition">
-      <h3 className="text-xl font-semibold mb-3">
+    <div className="border rounded-2xl p-4 sm:p-6 hover:shadow-lg transition">
+      <h3 className="text-lg sm:text-xl font-semibold mb-3">
         Commercial Grinding Machine
       </h3>
 
@@ -255,8 +255,8 @@ const page = () => {
       </a>
     </div>
 
-    <div className="border rounded-2xl p-6 hover:shadow-lg transition">
-      <h3 className="text-xl font-semibold mb-3">
+    <div className="border rounded-2xl p-4 sm:p-6 hover:shadow-lg transition">
+      <h3 className="text-lg sm:text-xl font-semibold mb-3">
         Export Registration Help
       </h3>
 

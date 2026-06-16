@@ -7,14 +7,14 @@ const Page = () => {
     <>
       <Header />
 
-      <div className="min-h-screen w-full text-xl font-medium px-6 py-8">
-        <h1 className="text-5xl text-center font-bold mb-10">
+      <div className="min-h-screen w-full text-base sm:text-lg md:text-xl font-medium px-4 sm:px-6 py-6 sm:py-8">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl text-center font-bold mb-6 sm:mb-10">
           About UIB (Underrated Indian Businesses)
         </h1>
 
         {/* What is this website */}
         <section className="mb-10">
-          <h2 className="text-3xl font-semibold mb-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4">
             What is this website?
           </h2>
 
@@ -33,7 +33,7 @@ const Page = () => {
 
         {/* How does our website guide you */}
         <section className="mb-10">
-          <h2 className="text-3xl font-semibold mb-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4">
             How does our website guide you?
           </h2>
 
@@ -46,7 +46,7 @@ const Page = () => {
 
           <div className="space-y-6">
             <div>
-              <h3 className="text-2xl font-semibold mb-2">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2">
                 1. Sourcing Process (Where to get the item)
               </h3>
 
@@ -64,7 +64,7 @@ const Page = () => {
             </div>
 
             <div>
-              <h3 className="text-2xl font-semibold mb-2">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2">
                 2. Local Business Process (Selling in your town)
               </h3>
 
@@ -82,7 +82,7 @@ const Page = () => {
             </div>
 
             <div>
-              <h3 className="text-2xl font-semibold mb-2">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2">
                 3. National Process (Selling across India via Apps)
               </h3>
 
@@ -100,7 +100,7 @@ const Page = () => {
             </div>
 
             <div>
-              <h3 className="text-2xl font-semibold mb-2">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2">
                 4. International Process (Selling globally via Amazon)
               </h3>
 
@@ -122,7 +122,7 @@ const Page = () => {
 
         {/* Businesses */}
         <section className="mb-10">
-          <h2 className="text-3xl font-semibold mb-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4">
             The 4 Underrated Businesses We Guide You Through
           </h2>
 
@@ -133,7 +133,7 @@ const Page = () => {
 
           <div className="space-y-5">
             <div>
-              <h3 className="text-2xl font-semibold">Okra (Bhindi)</h3>
+              <h3 className="text-lg sm:text-xl md:text-2xl font-semibold">Okra (Bhindi)</h3>
               <p>
                 Moving from fresh mandi sacks to national apps and
                 frozen/packaged exports.
@@ -141,7 +141,7 @@ const Page = () => {
             </div>
 
             <div>
-              <h3 className="text-2xl font-semibold">Refined Oil</h3>
+              <h3 className="text-lg sm:text-xl md:text-2xl font-semibold">Refined Oil</h3>
               <p>
                 Sourcing oilseeds, setting up a local small-scale mini mill,
                 crushing, and bottling.
@@ -149,7 +149,7 @@ const Page = () => {
             </div>
 
             <div>
-              <h3 className="text-2xl font-semibold">Foxnut (Makhana)</h3>
+              <h3 className="text-lg sm:text-xl md:text-2xl font-semibold">Foxnut (Makhana)</h3>
               <p>
                 Sourcing raw seeds, roasting and cleaning processes, and selling
                 branded snacks on Amazon.
@@ -157,7 +157,7 @@ const Page = () => {
             </div>
 
             <div>
-              <h3 className="text-2xl font-semibold">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-semibold">
                 Tragacanth Gum (Gond Katira)
               </h3>
               <p>

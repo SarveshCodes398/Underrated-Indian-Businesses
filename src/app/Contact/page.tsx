@@ -7,14 +7,14 @@ const Page = () => {
     <>
       <Header />
 
-      <div className="min-h-screen w-full text-xl font-medium px-6 py-8">
-        <h1 className="text-5xl text-center font-bold mb-10">
+      <div className="min-h-screen w-full text-base sm:text-lg md:text-xl font-medium px-4 sm:px-6 py-6 sm:py-8">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl text-center font-bold mb-6 sm:mb-10">
           Contact Us
         </h1>
 
         {/* Introduction */}
         <section className="mb-10">
-          <h2 className="text-3xl font-semibold mb-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4">
             Have a Question? We're Here to Help.
           </h2>
 
@@ -34,13 +34,13 @@ const Page = () => {
 
         {/* Contact Information */}
         <section className="mb-10">
-          <h2 className="text-3xl font-semibold mb-6">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-6">
             Contact Information
           </h2>
 
           <div className="space-y-4">
             <div>
-              <h3 className="text-2xl font-semibold">📧 Email</h3>
+              <h3 className="text-lg sm:text-xl md:text-2xl font-semibold">📧 Email</h3>
               <a
                 href="mailto:mathursarvesh722@gmail.com"
                 className="text-blue-600 hover:underline"
@@ -50,12 +50,12 @@ const Page = () => {
             </div>
 
             <div>
-              <h3 className="text-2xl font-semibold">📱 WhatsApp</h3>
+              <h3 className="text-lg sm:text-xl md:text-2xl font-semibold">📱 WhatsApp</h3>
               <p>+91 7340100113</p>
             </div>
 
             <div>
-              <h3 className="text-2xl font-semibold">🌐 Website</h3>
+              <h3 className="text-lg sm:text-xl md:text-2xl font-semibold">🌐 Website</h3>
               <p>www.yourwebsite.com</p>
             </div>
           </div>
@@ -63,13 +63,13 @@ const Page = () => {
 
         {/* Reasons to Contact */}
         <section className="mb-10">
-          <h2 className="text-3xl font-semibold mb-6">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-6">
             What Can You Contact Us About?
           </h2>
 
           <div className="space-y-6">
             <div>
-              <h3 className="text-2xl font-semibold mb-2">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2">
                 Business Guide Questions
               </h3>
 
@@ -81,7 +81,7 @@ const Page = () => {
             </div>
 
             <div>
-              <h3 className="text-2xl font-semibold mb-2">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2">
                 Report Incorrect Information
               </h3>
 
@@ -92,7 +92,7 @@ const Page = () => {
             </div>
 
             <div>
-              <h3 className="text-2xl font-semibold mb-2">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2">
                 Suggest a New Business
               </h3>
 
@@ -103,7 +103,7 @@ const Page = () => {
             </div>
 
             <div>
-              <h3 className="text-2xl font-semibold mb-2">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2">
                 Partnership & Collaboration
               </h3>
 
@@ -115,7 +115,7 @@ const Page = () => {
             </div>
 
             <div>
-              <h3 className="text-2xl font-semibold mb-2">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2">
                 General Feedback
               </h3>
 
@@ -129,7 +129,7 @@ const Page = () => {
 
         {/* Disclaimer */}
         <section className="mb-10">
-          <h2 className="text-3xl font-semibold mb-6">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-6">
             Before Contacting Us
           </h2>
 
@@ -153,7 +153,7 @@ const Page = () => {
 
         {/* Commitment */}
         <section>
-          <h2 className="text-3xl font-semibold mb-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4">
             Our Commitment
           </h2>
 
@@ -167,7 +167,7 @@ const Page = () => {
             Thank you for being part of the UIB community.
           </p>
 
-          <p className="mt-4 text-2xl font-bold">
+          <p className="mt-4 text-xl sm:text-2xl font-bold">
             Learn. Start. Grow.
           </p>
         </section>

@@ -1,7 +1,28 @@
 @import "tailwindcss";
 
+:root {
+  background-color: rgba(209, 224, 240, 0.5);
+}
 
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
 
-:root{
-   background-color: rgba(209, 224, 240, 0.5);
+@media (max-width: 768px) {
+  .swiper-button-prev {
+    left: 8px !important;
+  }
+
+  .swiper-button-next {
+    right: 8px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none !important;
+  }
 }

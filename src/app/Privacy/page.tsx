@@ -7,14 +7,14 @@ const Page = () => {
     <>
       <Header />
 
-      <div className="min-h-screen max-w-5xl mx-auto px-6 py-8 text-xl font-medium">
-        <h1 className="text-5xl text-center font-bold mb-10">
+      <div className="min-h-screen max-w-5xl mx-auto px-4 sm:px-6 py-6 sm:py-8 text-base sm:text-lg md:text-xl font-medium">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl text-center font-bold mb-6 sm:mb-10">
           Privacy Policy
         </h1>
 
         {/* Introduction */}
         <section className="mb-10">
-          <h2 className="text-3xl font-semibold mb-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4">
             Introduction
           </h2>
 
@@ -31,7 +31,7 @@ const Page = () => {
 
         {/* Information We Collect */}
         <section className="mb-10">
-          <h2 className="text-3xl font-semibold mb-6">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-6">
             Information We Collect
           </h2>
 
@@ -75,7 +75,7 @@ const Page = () => {
 
         {/* How We Use Information */}
         <section className="mb-10">
-          <h2 className="text-3xl font-semibold mb-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4">
             How We Use Your Information
           </h2>
 
@@ -94,7 +94,7 @@ const Page = () => {
 
         {/* Information Sharing */}
         <section className="mb-10">
-          <h2 className="text-3xl font-semibold mb-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4">
             Information Sharing
           </h2>
 
@@ -119,7 +119,7 @@ const Page = () => {
 
         {/* Data Security */}
         <section className="mb-10">
-          <h2 className="text-3xl font-semibold mb-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4">
             Data Security
           </h2>
 
@@ -135,7 +135,7 @@ const Page = () => {
 
         {/* External Links */}
         <section className="mb-10">
-          <h2 className="text-3xl font-semibold mb-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4">
             External Links
           </h2>
 
@@ -157,7 +157,7 @@ const Page = () => {
 
         {/* Children's Privacy */}
         <section className="mb-10">
-          <h2 className="text-3xl font-semibold mb-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4">
             Children's Privacy
           </h2>
 
@@ -169,7 +169,7 @@ const Page = () => {
 
         {/* User Rights */}
         <section className="mb-10">
-          <h2 className="text-3xl font-semibold mb-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4">
             Your Rights
           </h2>
 
@@ -187,7 +187,7 @@ const Page = () => {
 
         {/* Updates */}
         <section className="mb-10">
-          <h2 className="text-3xl font-semibold mb-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4">
             Changes to This Privacy Policy
           </h2>
 
@@ -204,7 +204,7 @@ const Page = () => {
 
         {/* Contact */}
         <section>
-          <h2 className="text-3xl font-semibold mb-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4">
             Contact Us
           </h2>
 
