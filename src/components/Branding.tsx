@@ -3,7 +3,7 @@ import React from 'react'
 const Branding = () => {
   return (
     <>
-    <div className='w-[95%] max-w-full mx-auto sm:left-10 left-0 relative mt-4 sm:mt-7 rounded-xl flex flex-col md:flex-row items-center justify-center gap-3 sm:gap-5 p-4 sm:p-6 md:p-10 min-h-48 sm:min-h-64 md:h-96 border-2 border-black'>
+    <div className='w-[95%] lg:mr-20  max-w-full mx-auto sm:left-10 left-0 relative mt-4 sm:mt-7 rounded-xl flex flex-col md:flex-row items-center justify-center gap-3 sm:gap-5 p-4 sm:p-6 md:p-10 min-h-48 sm:min-h-64 md:h-96 border-2 border-black'>
       <div className='gap-3 justify-center items-center'>
       <h1 className='text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-shadow-black font-extrabold text-center'>Welcome</h1>
       </div>
